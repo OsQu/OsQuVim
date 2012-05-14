@@ -1,3 +1,7 @@
+" Pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 syntax enable
 
 map!  <BS>
@@ -28,20 +32,17 @@ set wildmenu
 
 set cinoptions=0
 let c_space_errors=1
-" Change statusline color according to input mode
-function! InsertStatuslineColor(mode)
-  if a:mode == 'i'
-    hi statusline guibg=Cyan ctermfg=6 guifg=Black ctermbg=0
-  elseif a:mode == 'r'
-    hi statusline guibg=Purple ctermfg=5 guifg=Black ctermbg=0
-  else
-    hi statusline guibg=DarkRed ctermfg=1 guifg=Black ctermbg=0
-  endif
-endfunction
-
-au InsertEnter * call InsertStatuslineColor(v:insertmode)
-au InsertLeave * hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
 
 " default the statusline to green when entering Vim
 hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
+
+" Oppiipaha olee
+noremap! <Up> <nop>
+noremap! <Down> <nop>
+noremap! <Left> <nop>
+noremap! <Right> <nop>
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
 
