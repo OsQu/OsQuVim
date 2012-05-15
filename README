@@ -1,10 +1,10 @@
 Clone repository:
 
-git clone http://github.com/OsQu/OsQuVim.git
+git clone http://github.com/OsQu/OsQuVim.git ~/.vim 
 
 Create symlink:
 
 ln -s ~/.vim/vimrc ~/.vimrc
 
 Initialize and update submodules
-git submodule update --init
+cd ~/.vim && git submodule update --init
