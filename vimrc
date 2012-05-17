@@ -42,3 +42,5 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
+" 256 colors
+set t_Co=256
