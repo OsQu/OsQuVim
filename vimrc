@@ -44,3 +44,6 @@ noremap <Right> <nop>
 
 " 256 colors
 set t_Co=256
+
+" Set django html filetypes
+au BufRead,BufNewFile *.djhtml set filetype=htmldjango
