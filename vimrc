@@ -4,6 +4,10 @@ call pathogen#helptags()
 
 syntax enable
 
+" Hilight trailing whitespaces
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
+
 map!  <BS>
 map! [4~ <End>
 map <Tab> :bnext<CR>
