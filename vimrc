@@ -57,3 +57,5 @@ command CppTags execute "!ctags -R *.cpp *.h"
 
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
+
+set colorcolumn=80
