@@ -52,8 +52,5 @@ set t_Co=256
 " Set django html filetypes
 au BufRead,BufNewFile *.djhtml set filetype=htmldjango
 
-" cpp tags
-command CppTags execute "!ctags -R *.cpp *.h"
-
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
