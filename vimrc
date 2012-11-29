@@ -10,7 +10,7 @@ syntax enable
 
 " Hilight over 80 texts
 :highlight OverLength ctermbg=52 guibg=#592929
-:match OverLength /\%81v.\+/
+:2match OverLength /\%81v.\+/
 
 map!  <BS>
 map! [4~ <End>
