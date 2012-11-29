@@ -8,6 +8,10 @@ syntax enable
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
+" Hilight over 80 texts
+:highlight OverLength ctermbg=52 guibg=#592929
+:match OverLength /\%81v.\+/
+
 map!  <BS>
 map! [4~ <End>
 map <Tab> :bnext<CR>
@@ -57,5 +61,3 @@ command CppTags execute "!ctags -R *.cpp *.h"
 
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
-
-set colorcolumn=80
