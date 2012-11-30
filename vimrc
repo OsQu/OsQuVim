@@ -4,6 +4,12 @@ call pathogen#helptags()
 
 syntax enable
 
+set background=dark
+
+" 256 colors and solarized
+set t_Co=256
+colorscheme solarized
+
 " Hilight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
@@ -19,7 +25,6 @@ map <S-Tab> :bprev<CR>
 
 map å ^
 map gå g^
-set background=dark
 set hlsearch
 set nocompatible
 set backspace=indent,eol,start
@@ -49,9 +54,6 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-
-" 256 colors
-set t_Co=256
 
 " Set django html filetypes
 au BufRead,BufNewFile *.djhtml set filetype=htmldjango
