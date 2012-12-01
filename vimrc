@@ -14,9 +14,8 @@ colorscheme solarized
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
-" Hilight over 80 texts
-:highlight OverLength ctermbg=52 guibg=#592929
-:2match OverLength /\%81v.\+/
+set colorcolumn=80
+:highlight ColorColumn ctermbg=0
 
 map!  <BS>
 map! [4~ <End>
