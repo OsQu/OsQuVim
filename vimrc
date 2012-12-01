@@ -12,7 +12,7 @@ colorscheme solarized
 
 " Hilight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
+:au BufWinEnter * let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)
 
 set colorcolumn=80
 :highlight ColorColumn ctermbg=0
