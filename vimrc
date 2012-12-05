@@ -59,6 +59,7 @@ au BufRead,BufNewFile *.djhtml set filetype=htmldjango
 
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
+au FileType coffee set tabstop=2 shiftwidth=2
 
 " Auto close / skip brackets and parenthis
 inoremap (      ()<Left>
