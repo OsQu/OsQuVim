@@ -56,6 +56,7 @@ noremap <Right> :tabn<CR>
 
 " Set django html filetypes
 au BufRead,BufNewFile *.djhtml set filetype=htmldjango
+au BufRead,BufNewFile *.hamstache set filetype=haml
 
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
@@ -78,3 +79,5 @@ inoremap {}     {}
 inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
+" Command-T mapping
+noremap <C-N> :CommandT<CR>
