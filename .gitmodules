@@ -7,3 +7,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "vim-haml"]
+	path = vim-haml
+	url = https://github.com/tpope/vim-haml.git
+[submodule "vim-rabl"]
+	path = vim-rabl
+	url = https://github.com/yaymukund/vim-rabl.git
