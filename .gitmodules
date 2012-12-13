@@ -6,13 +6,6 @@
 	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
-[submodule "vim-haml"]
-	path = bundle/vim-haml
-	url = https://github.com/tpope/vim-haml.git
-[submodule "vim-rabl"]
-	path = bundle/vim-rabl
-	url = https://github.com/yaymukund/vim-rabl.git
 [submodule "bundle/vim-rabl"]
 	path = bundle/vim-rabl
 	url = https://github.com/yaymukund/vim-rabl.git
