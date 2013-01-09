@@ -12,3 +12,6 @@
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = https://github.com/tpope/vim-haml.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = git://github.com/hallison/vim-markdown.git
