@@ -32,7 +32,7 @@ set smartcase
 set incsearch
 set ts=4
 set shiftwidth=4
-set nu
+set rnu
 set autoindent
 set expandtab
 set cursorline
@@ -61,6 +61,7 @@ au BufRead,BufNewFile *.hamstache set filetype=haml
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
 au FileType coffee set tabstop=2 shiftwidth=2
+au FileType eruby set tabstop=2 shiftwidth=2
 
 " Auto close / skip brackets and parenthis
 inoremap (      ()<Left>
