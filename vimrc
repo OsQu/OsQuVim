@@ -40,7 +40,6 @@ set laststatus=2
 set hidden
 set autoread
 set wildmenu
-set mouse=a
 
 set cinoptions=0
 let c_space_errors=1
