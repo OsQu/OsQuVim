@@ -18,3 +18,6 @@
 [submodule "bundle/scala"]
 	path = bundle/scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/markupmultiple"]
+	path = bundle/markupmultiple
+	url = git://github.com/adinapoli/vim-markmultiple.git

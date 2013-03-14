@@ -82,4 +82,7 @@ inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}
 
 " Command-T mapping
 noremap <C-N> :CommandT<CR>
-set wildignore+=node_modules
+set wildignore+=node_modules,env
+
+" Multiple edit
+let g:mark_multiple_trigger = "<C-m>"
