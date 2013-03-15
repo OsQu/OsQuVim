@@ -21,3 +21,12 @@
 [submodule "bundle/markupmultiple"]
 	path = bundle/markupmultiple
 	url = git://github.com/adinapoli/vim-markmultiple.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/bundler"]
+	path = bundle/bundler
+	url = git://github.com/tpope/vim-bundler.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

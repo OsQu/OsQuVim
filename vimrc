@@ -86,3 +86,6 @@ set wildignore+=node_modules,env
 
 " Multiple edit
 let g:mark_multiple_trigger = "<C-m>"
+
+" NERDTree mappings
+map <F5> :NERDTreeFind<CR>
