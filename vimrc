@@ -13,6 +13,7 @@ colorscheme solarized
 " Hilight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :au BufWinEnter * let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)
+:map <F6> :let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)<CR>
 
 set colorcolumn=80
 :highlight ColorColumn ctermbg=0
@@ -83,9 +84,6 @@ inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}
 " Command-T mapping
 noremap <C-N> :CommandT<CR>
 set wildignore+=node_modules,env
-
-" Multiple edit
-let g:mark_multiple_trigger = "<C-m>"
 
 " NERDTree mappings
 map <F5> :NERDTreeFind<CR>
