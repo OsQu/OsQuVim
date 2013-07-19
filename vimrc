@@ -45,16 +45,6 @@ set wildmenu
 set cinoptions=0
 let c_space_errors=1
 
-" Oppiipaha olee
-noremap! <Up> <nop>
-noremap! <Down> <nop>
-noremap! <Left> <nop>
-noremap! <Right> <nop>
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> :tabp<CR>
-noremap <Right> :tabn<CR>
-
 " Set django html filetypes
 au BufRead,BufNewFile *.djhtml set filetype=htmldjango
 au BufRead,BufNewFile *.hamstache set filetype=haml
