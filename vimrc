@@ -77,3 +77,5 @@ set wildignore+=node_modules,env
 
 " NERDTree mappings
 map <F5> :NERDTreeFind<CR>
+
+set foldmethod=indent
