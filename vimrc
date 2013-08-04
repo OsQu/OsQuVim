@@ -48,6 +48,7 @@ let c_space_errors=1
 " Set django html filetypes
 au BufRead,BufNewFile *.djhtml set filetype=htmldjango
 au BufRead,BufNewFile *.hamstache set filetype=haml
+au BufRead,BufNewFile *.coffee set filetype=coffee
 
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
