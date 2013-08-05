@@ -73,7 +73,7 @@ inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " Command-T mapping
-noremap <C-N> :CommandT<CR>
+noremap <C-N> :CtrlP<CR>
 set wildignore+=node_modules,env
 
 " NERDTree mappings
