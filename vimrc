@@ -85,3 +85,7 @@ set foldlevelstart=999
 
 set pastetoggle=<F2>
 map <Leader>t :BufExplorer<CR>
+
+" Syntastic
+let g:syntastic_coffee_coffeelint_args="--csv -f ~/.coffeelintrc"
+let g:syntastic_html_checkers=[]
