@@ -3,6 +3,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 syntax enable
+:let mapleader = ","
 
 set background=dark
 
@@ -81,3 +82,6 @@ map <F5> :NERDTreeFind<CR>
 
 set foldmethod=indent
 set foldlevelstart=999
+
+set pastetoggle=<F2>
+map <Leader>t :BufExplorer<CR>
