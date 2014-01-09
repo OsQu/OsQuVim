@@ -89,3 +89,6 @@ map <Leader>t :BufExplorer<CR>
 " Syntastic
 let g:syntastic_coffee_coffeelint_args="--csv -f ~/.coffeelintrc"
 let g:syntastic_html_checkers=[]
+
+" Close buffer without closing the window
+nmap <silent> <Leader>c :bp\|bd #<CR>
