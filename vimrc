@@ -92,3 +92,5 @@ let g:syntastic_html_checkers=[]
 
 " Close buffer without closing the window
 nmap <silent> <Leader>c :bp\|bd #<CR>
+
+nmap <silent> <Leader>g :GitGutterAll<CR>
