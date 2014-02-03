@@ -34,3 +34,10 @@
 [submodule "bundle/VimClojure"]
 	path = bundle/VimClojure
 	url = git@github.com:vim-scripts/VimClojure.git
+[submodule "bundle/syntastic"]
+    path = bundle/syntastic
+    url = https://github.com/scrooloose/syntastic
+
+[submodule "bundle/vim-gitgutter"]
+    path = bundle/vim-gitgutter
+    url = git://github.com/airblade/vim-gitgutter.git
