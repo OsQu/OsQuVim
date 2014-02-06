@@ -94,3 +94,8 @@ let g:syntastic_html_checkers=[]
 nmap <silent> <Leader>c :bp\|bd #<CR>
 
 nmap <silent> <Leader>g :GitGutterAll<CR>
+
+" Load custom vimrc from pwd
+if filereadable(".vim.custom")
+    so .vim.custom
+endif
