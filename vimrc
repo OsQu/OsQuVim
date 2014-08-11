@@ -43,6 +43,8 @@ set laststatus=2
 set hidden
 set autoread
 set wildmenu
+set ignorecase
+set smartcase
 
 set cinoptions=0
 let c_space_errors=1
