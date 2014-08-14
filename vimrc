@@ -105,3 +105,6 @@ nmap <silent> <Leader>g :GitGutterAll<CR>
 if filereadable(".vim.custom")
     so .vim.custom
 endif
+
+" Disable slim syntax checker, hangs for some reason
+let g:syntastic_slim_checkers=['']
