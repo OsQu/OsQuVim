@@ -86,8 +86,11 @@ map <F5> :NERDTreeFind<CR>
 set foldmethod=indent
 set foldlevelstart=999
 
+" Some leader mappings
 set pastetoggle=<F2>
 map <Leader>t :BufExplorer<CR>
+" Open a quick fix window on bottom
+map <Leader>f :bo cw<CR>
 
 " Syntastic
 let g:syntastic_coffee_coffeelint_args="--csv -f ~/.coffeelintrc"
