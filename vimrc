@@ -49,10 +49,11 @@ set smartcase
 set cinoptions=0
 let c_space_errors=1
 
-" Set django html filetypes
 au BufRead,BufNewFile *.djhtml set filetype=htmldjango
 au BufRead,BufNewFile *.hamstache set filetype=haml
 au BufRead,BufNewFile *.coffee set filetype=coffee
+au BufRead,BufNewFile *.arb set filetype=ruby
+au BufRead,BufNewFile *.tex set filetype=tex
 
 " ruby indention is 2
 au FileType ruby set tabstop=2 shiftwidth=2
@@ -108,3 +109,5 @@ endif
 
 " Disable slim syntax checker, hangs for some reason
 let g:syntastic_slim_checkers=['']
+
+set spelllang=en_gb
