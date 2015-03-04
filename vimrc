@@ -33,8 +33,8 @@ set backspace=indent,eol,start
 set ruler
 set smartcase
 set incsearch
-set ts=4
-set shiftwidth=4
+set ts=2
+set shiftwidth=2
 set rnu
 set autoindent
 set expandtab
@@ -54,11 +54,6 @@ au BufRead,BufNewFile *.hamstache set filetype=haml
 au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.arb set filetype=ruby
 au BufRead,BufNewFile *.tex set filetype=tex
-
-" ruby indention is 2
-au FileType ruby set tabstop=2 shiftwidth=2
-au FileType coffee set tabstop=2 shiftwidth=2
-au FileType eruby set tabstop=2 shiftwidth=2
 
 " Auto close / skip brackets and parenthis
 inoremap (      ()<Left>
