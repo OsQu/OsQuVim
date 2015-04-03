@@ -87,6 +87,7 @@ set pastetoggle=<F2>
 map <Leader>t :BufExplorer<CR>
 " Open a quick fix window on bottom
 map <Leader>f :bo cw<CR>
+map <Leader>w :OnlineThesaurusCurrentWord<CR>
 
 " Syntastic
 let g:syntastic_coffee_coffeelint_args="--csv -f ~/.coffeelintrc"
