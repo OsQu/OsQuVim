@@ -53,3 +53,6 @@
 [submodule "bundle/vim-online-thesaurus"]
 	path = bundle/vim-online-thesaurus
 	url = git@github.com:beloglazov/vim-online-thesaurus.git
+[submodule "bundle/goyo"]
+	path = bundle/goyo
+	url = git@github.com:junegunn/goyo.vim.git
