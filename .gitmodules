@@ -47,3 +47,6 @@
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
 	url = git@github.com:slim-template/vim-slim.git
+[submodule "bundle/vim-wordy"]
+	path = bundle/vim-wordy
+	url = git@github.com:reedes/vim-wordy.git
