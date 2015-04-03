@@ -50,3 +50,6 @@
 [submodule "bundle/vim-wordy"]
 	path = bundle/vim-wordy
 	url = git@github.com:reedes/vim-wordy.git
+[submodule "bundle/vim-online-thesaurus"]
+	path = bundle/vim-online-thesaurus
+	url = git@github.com:beloglazov/vim-online-thesaurus.git
