@@ -62,3 +62,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/php.vim"]
+	path = bundle/php.vim
+	url = git@github.com:StanAngeloff/php.vim.git
