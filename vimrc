@@ -45,6 +45,7 @@ set autoread
 set wildmenu
 set ignorecase
 set smartcase
+set listchars=tab:>-,eol:$
 
 set cinoptions=0
 let c_space_errors=1
