@@ -15,7 +15,7 @@ colorscheme solarized
 " Hilight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :au BufWinEnter * let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)
-:map <F6> :let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)<CR>
+:map <Leader>r :let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)<CR>
 
 set colorcolumn=80
 :highlight ColorColumn ctermbg=0
@@ -45,6 +45,7 @@ set autoread
 set wildmenu
 set ignorecase
 set smartcase
+set listchars=tab:>-,eol:$
 
 set cinoptions=0
 let c_space_errors=1
@@ -77,13 +78,13 @@ noremap <C-N> :CtrlP<CR>
 set wildignore+=node_modules,env
 
 " NERDTree mappings
-map <F5> :NERDTreeFind<CR>
+map <Leader>d :NERDTreeFind<CR>
 
 set foldmethod=indent
 set foldlevelstart=999
 
 " Some leader mappings
-set pastetoggle=<F2>
+set pastetoggle=<Leader>p
 map <Leader>t :BufExplorer<CR>
 " Open a quick fix window on bottom
 map <Leader>f :bo cw<CR>
@@ -112,3 +113,8 @@ set spelllang=en_gb
 let g:limelight_conceal_ctermfg = 'DarkGray'
 autocmd User GoyoEnter Limelight
 autocmd User GoyoLeave Limelight!
+
+" NERDTree configuration
+let NERDTreeIgnore = ['\.pyc$']
+
+
