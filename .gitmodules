@@ -86,3 +86,6 @@
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
+[submodule "bundle/Vim-R-plugin"]
+	path = bundle/Vim-R-plugin
+	url = git@github.com:jcfaria/Vim-R-plugin.git
