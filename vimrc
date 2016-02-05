@@ -78,6 +78,9 @@ set wildignore+=node_modules,env
 " Easier CTags
 map <Leader>e <C-]>
 
+" Tagbar bindings
+map <Leader>s :TagbarToggle<CR>
+
 " NERDTree mappings
 map <Leader>d :NERDTreeFind<CR>
 
