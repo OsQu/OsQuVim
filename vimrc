@@ -22,8 +22,6 @@ set colorcolumn=80
 
 map!  <BS>
 map! [4~ <End>
-map <Tab> :bnext<CR>
-map <S-Tab> :bprev<CR>
 
 map å ^
 map gå g^
@@ -76,6 +74,9 @@ inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}
 " Command-T mapping
 noremap <C-N> :CtrlP<CR>
 set wildignore+=node_modules,env
+
+" Easier CTags
+map <Leader>e <C-]>
 
 " NERDTree mappings
 map <Leader>d :NERDTreeFind<CR>
