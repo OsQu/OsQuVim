@@ -115,6 +115,7 @@ set spelllang=en_gb
 
 " Limelight colors
 let g:limelight_conceal_ctermfg = 'DarkGray'
+let g:goyo_width = 83
 autocmd User GoyoEnter Limelight
 autocmd User GoyoLeave Limelight!
 
