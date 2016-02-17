@@ -76,7 +76,7 @@ noremap <C-N> :CtrlP<CR>
 set wildignore+=node_modules,env
 
 " Easier CTags
-map <Leader>e <C-]>
+map <Leader>e g<C-]>
 
 " Tagbar bindings
 map <Leader>s :TagbarToggle<CR>
