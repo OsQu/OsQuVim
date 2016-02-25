@@ -122,4 +122,5 @@ autocmd User GoyoLeave Limelight!
 " NERDTree configuration
 let NERDTreeIgnore = ['\.pyc$']
 
-
+" Flow plugin
+let g:flow#autoclose=1

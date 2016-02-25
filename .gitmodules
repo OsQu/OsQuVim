@@ -77,9 +77,6 @@
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = git@github.com:StanAngeloff/php.vim.git
-[submodule "bundle/vim-javascript-syntax"]
-	path = bundle/vim-javascript-syntax
-	url = git@github.com:jelera/vim-javascript-syntax.git
 [submodule "bundle/html5.vim"]
 	path = bundle/html5.vim
 	url = git@github.com:othree/html5.vim.git
@@ -95,3 +92,6 @@
 [submodule "bundle/vimtex"]
 	path = bundle/vimtex
 	url = git@github.com:lervag/vimtex.git
+[submodule "bundle/yajs.vim"]
+	path = bundle/yajs.vim
+	url = git@github.com:othree/yajs.vim.git
