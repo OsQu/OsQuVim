@@ -6,11 +6,11 @@ syntax enable
 filetype plugin on
 :let mapleader = ","
 
-set background=dark
 
 " 256 colors and solarized
 set t_Co=256
 colorscheme solarized
+set background=dark
 
 " Hilight trailing whitespaces
 :highlight ExtraWhitespace ctermbg=red guibg=red
@@ -124,3 +124,6 @@ let NERDTreeIgnore = ['\.pyc$']
 
 " Flow plugin
 let g:flow#autoclose=1
+
+" Solarized theme for airline
+let g:airline_theme = 'dark'
