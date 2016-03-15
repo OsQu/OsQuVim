@@ -127,3 +127,6 @@ let g:flow#autoclose=1
 
 " Solarized theme for airline
 let g:airline_theme = 'dark'
+
+" get out of :terminal's insert mode
+:tnoremap <Esc> <C-\><C-n>
