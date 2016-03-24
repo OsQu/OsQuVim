@@ -128,5 +128,10 @@ let g:flow#autoclose=1
 " Solarized theme for airline
 let g:airline_theme = 'dark'
 
+" Airline truncate
+let g:airline#extensions#default#layout = [
+    \ [ 'a', 'b', 'c' ],
+    \ [ 'y', 'z']
+    \ ]
 " get out of :terminal's insert mode
 :tnoremap <Esc> <C-\><C-n>
