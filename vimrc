@@ -17,7 +17,7 @@ set background=dark
 :au BufWinEnter * let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)
 :map <Leader>r :let w:m1=matchadd('ExtraWhitespace', '\s\+$', -1)<CR>
 
-set colorcolumn=80
+set colorcolumn=100
 :highlight ColorColumn ctermbg=0
 
 map!  <BS>
@@ -135,3 +135,6 @@ let g:airline#extensions#default#layout = [
     \ ]
 " get out of :terminal's insert mode
 :tnoremap <Esc> <C-\><C-n>
+
+" Nifty replace macro
+nmap <silent> <Leader>s :,$s/<C-r><C-w>/
