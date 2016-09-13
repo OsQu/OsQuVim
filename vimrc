@@ -23,8 +23,8 @@ set colorcolumn=100
 map!  <BS>
 map! [4~ <End>
 
-map � ^
-map g� g^
+map å ^
+map gå g^
 set hlsearch
 set nocompatible
 set backspace=indent,eol,start
@@ -94,10 +94,6 @@ map <Leader>t :BufExplorer<CR>
 map <Leader>f :bo cw<CR>
 map <Leader>w :OnlineThesaurusCurrentWord<CR>
 
-" Syntastic
-let g:syntastic_coffee_coffeelint_args="--csv -f ~/.coffeelintrc"
-let g:syntastic_html_checkers=[]
-
 " Close buffer without closing the window
 nmap <silent> <Leader>c :bp\|bd #<CR>
 
@@ -107,9 +103,6 @@ nmap <silent> <Leader>g :GitGutterAll<CR>
 if filereadable(".vim.custom")
     so .vim.custom
 endif
-
-" Disable slim syntax checker, hangs for some reason
-let g:syntastic_slim_checkers=['']
 
 set spelllang=en_gb
 
@@ -138,3 +131,10 @@ let g:airline#extensions#default#layout = [
 
 " Nifty replace macro
 nmap <silent> <Leader>s :,$s/<C-r><C-w>/
+
+" Neomake configs
+autocmd! BufWritePost * Neomake " Run neomake on save
+
+" Re-color symbols, highlight groups from :highlight
+let g:neomake_error_sign = { 'text': '🚫', 'texthl': 'SpecialKey' }
+let g:neomake_warning_sign = { 'text': '⚠️', 'texthl': 'SpecialKey' }

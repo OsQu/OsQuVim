@@ -101,3 +101,6 @@
 [submodule "bundle/python-syntax"]
 	path = bundle/python-syntax
 	url = git@github.com:hdima/python-syntax.git
+[submodule "bundle/neomake"]
+	path = bundle/neomake
+	url = git@github.com:neomake/neomake.git
