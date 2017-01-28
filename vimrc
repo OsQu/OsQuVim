@@ -84,6 +84,9 @@ map <Leader>s :TagbarToggle<CR>
 " NERDTree mappings
 map <Leader>d :NERDTreeFind<CR>
 
+" Run Neomake!
+map <Leader>m :Neomake!<CR>
+
 set foldmethod=indent
 set foldlevelstart=999
 
