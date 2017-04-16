@@ -137,7 +137,3 @@ nmap <silent> <Leader>s :,$s/<C-r><C-w>/
 
 " Neomake configs
 autocmd! BufWritePost * Neomake " Run neomake on save
-
-" Re-color symbols, highlight groups from :highlight
-let g:neomake_error_sign = { 'text': '🚫', 'texthl': 'SpecialKey' }
-let g:neomake_warning_sign = { 'text': '⚠️', 'texthl': 'SpecialKey' }
