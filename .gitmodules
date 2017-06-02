@@ -110,3 +110,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git

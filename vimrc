@@ -5,7 +5,7 @@ call pathogen#helptags()
 syntax enable
 filetype plugin on
 :let mapleader = ","
-
+language en_GB
 
 " 256 colors and solarized
 set t_Co=256
@@ -141,3 +141,13 @@ autocmd! BufWritePost * Neomake " Run neomake on save
 " Hdevtool bindings
 au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+" Re-color symbols, highlight groups from :highlight
+let g:neomake_warning_sign = {
+  \ 'text': '✹',
+  \ 'texthl': 'WarningMsg',
+  \ }
+
+let g:neomake_error_sign = {
+  \ 'text': '✖',
+  \ 'texthl': 'ErrorMsg',
+  \ }
