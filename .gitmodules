@@ -113,3 +113,6 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "bundle/haskell-vim"]
+	path = bundle/haskell-vim
+	url = git@github.com:neovimhaskell/haskell-vim.git
