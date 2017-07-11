@@ -110,3 +110,6 @@
 [submodule "bundle/vim-mix"]
 	path = bundle/vim-mix
 	url = git@github.com:mattreduce/vim-mix.git
+[submodule "bundle/vim-hdevtools"]
+	path = bundle/vim-hdevtools
+	url = https://github.com/bitc/vim-hdevtools.git

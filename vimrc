@@ -137,3 +137,7 @@ nmap <silent> <Leader>s :,$s/<C-r><C-w>/
 
 " Neomake configs
 autocmd! BufWritePost * Neomake " Run neomake on save
+
+" Hdevtool bindings
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
