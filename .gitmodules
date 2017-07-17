@@ -116,3 +116,6 @@
 [submodule "bundle/haskell-vim"]
 	path = bundle/haskell-vim
 	url = git@github.com:neovimhaskell/haskell-vim.git
+[submodule "bundle/neoformat"]
+	path = bundle/neoformat
+	url = git@github.com:sbdchd/neoformat.git
