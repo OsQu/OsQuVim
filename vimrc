@@ -141,6 +141,9 @@ autocmd! BufWritePost * Neomake " Run neomake on save
 " Hdevtool bindings
 au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+" Flow bindings
+au FileType javascript nnoremap <buffer> <F1> :FlowType<CR>
+
 " Re-color symbols, highlight groups from :highlight
 let g:neomake_warning_sign = {
   \ 'text': '✹',
