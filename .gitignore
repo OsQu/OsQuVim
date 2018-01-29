@@ -1,3 +1,7 @@
 spell/
 .netrwhist
 init.vim
+
+!bundle/
+bundle/*
+!bundle/Vundle.vim

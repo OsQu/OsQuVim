@@ -1,11 +1,22 @@
 syntax enable
+filetype off
+
+" Vundler
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+so ~/.vim/plugins
+
+call vundle#end()
 filetype plugin on
+
 :let mapleader = ","
 language en_GB
 
 " 256 colors and solarized
 set t_Co=256
-"colorscheme solarized
+colorscheme solarized
 set background=dark
 
 " Hilight trailing whitespaces
