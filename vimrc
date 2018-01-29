@@ -1,7 +1,3 @@
-" Pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 syntax enable
 filetype plugin on
 :let mapleader = ","
@@ -9,7 +5,7 @@ language en_GB
 
 " 256 colors and solarized
 set t_Co=256
-colorscheme solarized
+"colorscheme solarized
 set background=dark
 
 " Hilight trailing whitespaces
@@ -48,8 +44,6 @@ set listchars=tab:>-,eol:$
 set cinoptions=0
 let c_space_errors=1
 
-au BufRead,BufNewFile *.djhtml set filetype=htmldjango
-au BufRead,BufNewFile *.hamstache set filetype=haml
 au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.arb set filetype=ruby
 au BufRead,BufNewFile *.tex set filetype=tex
@@ -71,7 +65,7 @@ inoremap {}     {}
 inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
-" Command-T mapping
+" CtlrP mapping
 noremap <C-N> :CtrlP<CR>
 set wildignore+=node_modules,env
 
@@ -84,9 +78,6 @@ map <Leader>s :TagbarToggle<CR>
 " NERDTree mappings
 map <Leader>d :NERDTreeFind<CR>
 
-" Run Neomake!
-map <Leader>m :Neomake!<CR>
-
 set foldmethod=indent
 set foldlevelstart=999
 
@@ -95,7 +86,6 @@ set pastetoggle=<Leader>p
 map <Leader>t :BufExplorer<CR>
 " Open a quick fix window on bottom
 map <Leader>f :bo cw<CR>
-map <Leader>w :OnlineThesaurusCurrentWord<CR>
 
 " Close buffer without closing the window
 nmap <silent> <Leader>c :bp\|bd #<CR>
@@ -129,28 +119,10 @@ let g:airline#extensions#default#layout = [
     \ [ 'a', 'b', 'c' ],
     \ [ 'y', 'z']
     \ ]
-" get out of :terminal's insert mode
-:tnoremap <Esc> <C-\><C-n>
-
-" Nifty replace macro
-nmap <silent> <Leader>s :,$s/<C-r><C-w>/
-
-" Neomake configs
-autocmd! BufWritePost * Neomake " Run neomake on save
 
 " Hdevtool bindings
 au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+
 " Flow bindings
 au FileType javascript nnoremap <buffer> <F1> :FlowType<CR>
-
-" Re-color symbols, highlight groups from :highlight
-let g:neomake_warning_sign = {
-  \ 'text': '✹',
-  \ 'texthl': 'WarningMsg',
-  \ }
-
-let g:neomake_error_sign = {
-  \ 'text': '✖',
-  \ 'texthl': 'ErrorMsg',
-  \ }
