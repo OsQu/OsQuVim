@@ -137,3 +137,6 @@ au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
 
 " Flow bindings
 au FileType javascript nnoremap <buffer> <F1> :FlowType<CR>
+
+" Enable do-end matching for ruby
+runtime macros/matchit.vim
