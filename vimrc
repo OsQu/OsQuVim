@@ -140,3 +140,18 @@ au FileType javascript nnoremap <buffer> <F1> :FlowType<CR>
 
 " Enable do-end matching for ruby
 runtime macros/matchit.vim
+
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Tsuquyomi settings
+let g:tsuquyomi_disable_default_mappings = 1
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " Make sure tsc is not used
