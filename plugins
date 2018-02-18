@@ -1,6 +1,6 @@
 Plugin 'tpope/vim-bundler'
 Plugin 'kien/ctrlp.vim'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
