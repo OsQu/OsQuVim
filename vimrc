@@ -155,3 +155,10 @@ let g:syntastic_check_on_wq = 0
 let g:tsuquyomi_disable_default_mappings = 1
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " Make sure tsc is not used
+
+au FileType go let g:ale_fixers = {
+\   'go': [
+\       'gofmt',
+\       'goimports',
+\   ],
+\}
