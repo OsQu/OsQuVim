@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 so ~/.vim/plugins
+so ~/.vim/vimrc.local
 
 call vundle#end()
 filetype plugin on

@@ -5,3 +5,4 @@ init.vim
 !bundle/
 bundle/*
 !bundle/Vundle.vim
+vimrc.local
